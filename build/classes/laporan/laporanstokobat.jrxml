@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a115cc7e-a932-4629-9426-559294b1239a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="55"/>
+	<parameter name="aas" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     obatherbal.`kd_obat` AS obatherbal_kd_obat,
+     obatherbal.`nama` AS obatherbal_nama,
+     obatherbal.`stok` AS obatherbal_stok,
+     obatherbal.`manfaat` AS obatherbal_manfaat,
+     obatherbal.`jenisobat` AS obatherbal_jenisobat,
+     obatherbal.`harga` AS obatherbal_harga
+FROM
+     `obatherbal` obatherbal]]>
+	</queryString>
+	<field name="obatherbal_kd_obat" class="java.lang.String"/>
+	<field name="obatherbal_nama" class="java.lang.String"/>
+	<field name="obatherbal_stok" class="java.lang.String"/>
+	<field name="obatherbal_manfaat" class="java.lang.String"/>
+	<field name="obatherbal_jenisobat" class="java.lang.String"/>
+	<field name="obatherbal_harga" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="155" splitType="Stretch">
+			<rectangle>
+				<reportElement x="10" y="138" width="802" height="4" backcolor="#000000" uuid="d029154f-5a2d-4238-8285-0426e8c4154f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="310" y="74" width="378" height="24" uuid="e0c1f52d-5b6e-4533-9eb4-b863d06f5a6f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jl.Pondok Pesantren Al-Fatah Pasir Angin Cileungsi Bogor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="186" y="12" width="595" height="62" forecolor="#009999" uuid="eec80b1e-5a59-4a4f-9b11-a1e607798d66"/>
+				<textElement textAlignment="Center">
+					<font size="32" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Toko Herbal CV AL-Ihya Cileungsi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="98" width="162" height="24" uuid="c5e732a9-9908-4ec6-833b-1f743e70404d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telepon  : 0821-1332-4544]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="16" width="161" height="123" uuid="7bf7099e-a3f7-4534-9a86-27c1fa1dbb59"/>
+				<imageExpression><![CDATA[new javax.swing.ImageIcon(getClass().getResource("gambar/Tiga.png.jpg")).getImage()]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="88" splitType="Stretch">
+			<staticText>
+				<reportElement x="208" y="0" width="394" height="45" forecolor="#006633" backcolor="#339900" uuid="3a49f182-8711-43f3-bb48-a613215003f0"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Stok Obat Herbal]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="573" y="0" width="100" height="20" forecolor="#000000" backcolor="#99FF99" uuid="be8b3987-185b-4e9d-a552-81b51732d687"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="473" y="0" width="100" height="20" forecolor="#000000" backcolor="#99FF99" uuid="a4b8b6ab-6510-4264-9398-1da98761cb85"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="373" y="0" width="100" height="20" forecolor="#000000" backcolor="#99FF99" uuid="6c9ce0de-de0f-4721-95d2-cee8acfa0fa7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="273" y="0" width="100" height="20" forecolor="#000000" backcolor="#99FF99" uuid="bee071b6-0c2e-4ee7-9222-c3fa6af786c7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="174" y="0" width="100" height="20" forecolor="#000000" backcolor="#99FF99" uuid="5bd700a1-bba5-4cea-a8a4-8e5fb08e8a5e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="75" y="0" width="100" height="20" forecolor="#000000" backcolor="#99FF99" uuid="76fbf8f7-089c-4bce-8774-423b1f9bfa2c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="76" y="0" width="100" height="20" uuid="6d317565-9355-4f0b-b4c9-f8e71d3a7ffd"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[obatherbal_kd_obat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="0" width="100" height="20" uuid="c6b6a58e-3d9c-4608-942c-cc0909c6372d"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[obatherbal_nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="276" y="0" width="100" height="20" uuid="7e4a5f92-2dea-4d5e-94a7-11a7656bbd77"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[obatherbal_stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="376" y="0" width="100" height="20" uuid="bad78e2d-86ae-4f76-818e-10dd1f878b2c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[obatherbal_manfaat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="476" y="0" width="100" height="20" uuid="bac6f572-10c2-4d60-b6e2-673d32d14a1c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[obatherbal_jenisobat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="576" y="0" width="100" height="20" uuid="1dae16ac-9e7b-4c58-896b-3338af4bc147"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[obatherbal_harga]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="573" y="0" width="100" height="20" uuid="3d9a74f0-799a-4384-9104-5a6f138a529c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="473" y="0" width="100" height="20" uuid="ccb0ed99-e6ad-46e3-9bb1-4a64887433d7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="373" y="0" width="100" height="20" uuid="284dd286-b6f8-44de-a5e6-36d73c27989f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="273" y="0" width="100" height="20" uuid="e4f29a27-f242-4af1-80e3-3b073f85bead"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="173" y="0" width="100" height="20" uuid="fb7c2de0-3f89-4621-93bc-57f29e539d3f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="75" y="0" width="100" height="20" uuid="f204f5e0-5e60-447b-ae1b-2c0a3ef8f1a1"/>
+			</rectangle>
+			<textField>
+				<reportElement x="76" y="0" width="100" height="20" uuid="11db1f7f-81af-4516-b563-734b340f8ed2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{obatherbal_kd_obat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="176" y="0" width="100" height="20" uuid="659c742b-0456-4de1-bd06-1a513e6f5dc4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{obatherbal_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="100" height="20" uuid="a259b5b1-976c-4198-94eb-3a517fb582eb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{obatherbal_stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="376" y="0" width="100" height="20" uuid="5e5cb197-07bd-4938-ba5c-1d98213ef78a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{obatherbal_manfaat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="476" y="0" width="100" height="20" uuid="e1e19000-f96c-4dd8-8f20-86e1032eec44"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{obatherbal_jenisobat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="576" y="0" width="100" height="20" uuid="aa55970e-e3cf-4192-87d0-c203017f8539"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{obatherbal_harga}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="187" splitType="Stretch">
+			<staticText>
+				<reportElement x="589" y="153" width="100" height="20" uuid="11961003-7fa5-4361-a367-95ddcfb13e79"/>
+				<textElement>
+					<font size="14" isBold="true" isItalic="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Lulu Balqis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="578" y="61" width="132" height="21" uuid="ff3525ed-cef9-4eac-b0ec-72a1682518bc"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Penanggung Jawab]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="556" y="40" width="193" height="21" uuid="efb2fa7a-7afa-41d0-825d-743e8c6e568c"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aas}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
